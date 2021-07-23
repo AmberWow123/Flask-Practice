@@ -24,7 +24,10 @@ def index():
     return "hello, world!"
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
+    # 'debug=True' make it easier for debugging 
+    # every time you modify the code, it will reflect on the web browser
+    # dont need to stop the app and re-run it again
 ```
 
 ## Run Flask App
