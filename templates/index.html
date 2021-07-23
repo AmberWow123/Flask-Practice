@@ -1,8 +1,17 @@
 <html>
     <head>
-        <title>{{ title }}</title>
+        <!-- check if argument title is passed in -->
+        {% if title %}
+            <title>{{ title }}</title>
+        {% else %}
+            <title>Flask</title>
+        {% endif %}
     </head>
     <body>
         <h1>Hello, World!</h1>
+
+        {% for d in data %}
+            <p>{{ d }}</p>
+        {% endfor %}
     </body>
 </html>
